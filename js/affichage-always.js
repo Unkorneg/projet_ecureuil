@@ -4,21 +4,18 @@ $(document).ready(function(){
 
 	var mrgntop = $('header').outerHeight(true);
 
-    $('#main').css({
-        'margin-top' : mrgntop
-    });
+	$('#main').css({
+		'margin-top' : mrgntop
+	});
 
     // réglage de l'apparition des petits trucs dans le menu
-    $(".menu-item").addEventListener("mouseover", mouseOverMenuItem);
-	$(".menu-item").addEventListener("mouseout", mouseOutMenuItem);
-
-	function mouseOverMenuItem() {
-	    $(".menu-item").style.color = "red";
-	}
-
-	function mouseOutMenuItem() {
-    	$(".menu-item").style.color = "black";
-	}
-
+    $(".sub-menu-item").hide();
+    $(".menu-item").hover(
+    	function() {
+    		$(this).children().children().show();
+    	}, function() {
+    		$(this).children().children().hide();
+    	});
 
 });
+

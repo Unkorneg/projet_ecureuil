@@ -36,35 +36,34 @@ header {
 
 nav {
 	background-color: #808080;
- 	position: fixed;
- 	right: 40.5%;
- 	width: 19%;
- 	height: 100%;
- 	margin: 0px 0px 20% 20%;
+	position: fixed;
+	right: 40.5%;
+	width: 19%;
+	height: 100%;
+	margin: 0px 0px 20% 20%;
 }
 
 #menu-principal {
-  padding:0;
-  margin:0;
-  list-style:none;
-  text-align: center;
-  width: 100%;
+	padding:0;
+	margin:0;
+	list-style:none;
+	text-align: center;
+	width: 100%;
 }
 .sub-menu {
-  padding:0;
-  margin:0;
-  list-style:none;
-  text-align: center;
+	padding:0;
+	margin:0;
+	list-style:none;
+	text-align: center;
 }
 .menu-item {
-   background-color:#808080; 
+	background-color:#808080; 
 }
 .sub-menu-item {
-	max-height: 0px;
 	overflow: hidden;
 }
 .sub-bleu {
-   background-color: #00A99D;
+	background-color: #00A99D;
 }
 .sub-jaune {
 	background-color: #FFC700;
@@ -83,10 +82,10 @@ nav {
 	font-size: 20px;
 }
 .sub-menu-item a {
-  font-size:16px;
+	font-size:16px;
 }
 .menu-bleu:hover {
- 	background: #43BAB2
+	background: #43BAB2
 }
 .menu-jaune:hover {
 	background: #FFDB5C
@@ -96,7 +95,7 @@ nav {
 }
 
 .sub-bleu:hover {
-   background: #006B64;
+	background: #006B64;
 }
 .sub-jaune:hover {
 	background: #AF8900;
