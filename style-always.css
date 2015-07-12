@@ -49,6 +49,14 @@ nav {
 	margin: 0px 0px 20% 20%;
 }
 
+.button {
+    display: inline-block;
+    padding: 1em;
+    background-color: #00A99D;
+    text-decoration: none;
+    color: white;
+}
+
 .colonne {
 	width: 37%;
 }
@@ -68,6 +76,7 @@ nav {
 #cadre1 {
 	background-color:;
 }
+
 
 footer {
 }
