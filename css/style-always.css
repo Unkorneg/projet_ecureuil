@@ -59,41 +59,49 @@ nav {
 .menu-item-bleu, .menu-item-jaune, .menu-item-rose {
    background-color:#808080; 
 }
-li.sub-menu-item {
-   overflow: hidden;
+.sub-menu-item-bleu {
    background-color: #00A99D;
+   max-height: 0px;
+   overflow: hidden;
 }
+.sub-menu-item-jaune {
+	background-color: #FFC700;
+	max-height: 0px;
+	overflow: hidden;
+}
+.sub-menu-item-rose {
+	background-color: #DA0067;
+	max-height: 0px;
+	overflow: hidden;
+}
+
 #menu-principal a {
 	display:block;
 	text-decoration: none;
 	color: white;
 	padding: 8px 0;
 }
-li.menu-item-bleu, .menu-item-jaune, .menu-item-rose a {
+.menu-item-bleu, .menu-item-jaune, .menu-item-rose a {
 	font-size: 20px;
 }
-li.sub-menu-item a {
+.sub-menu-item a {
   font-size:16px;
 }
-li.menu-item-bleu:hover {
-   background: #43BAB2
+.menu-item-bleu:hover {
+ 	background: #43BAB2
 }
-li.menu-item-jaune:hover {
+.menu-item-jaune:hover {
 	background: #FFDB5C
 }
-li.menu-item-rose:hover {
+.menu-item-rose:hover {
 	background: #E25195
 }
 
-li.sub-menu-item:hover {
+.sub-menu-item-bleu:hover {
    background: #006B64;
 }
-.menu-accordeon ul li:last-child {
-   border-radius: 0 0 6px 6px;
-   border:none;
-}
-.menu-accordeon li:hover li {
-  max-height: 15em;
+.sub-menu-item-jaune:hover {
+
 }
 
 .colonne {
