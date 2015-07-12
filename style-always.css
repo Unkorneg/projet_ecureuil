@@ -16,7 +16,7 @@ body {
 }
 
 #main {
-	background-color: #AAAAAA;
+	background-color: #B3B3B3;
 	overflow: hidden;
 	margin:auto;
 }
@@ -25,28 +25,31 @@ body {
 	float:left;
 	border-style: solid;
 	border-color: #98bf21;
-
+	width: 35%;
 }
 
 #barre-droite {
 	float:right;
 	border-style: solid;
 	border-color: #98bf21;
+	width: 35%;
 }
 
 nav {
-	border-style: solid;
-	border-color: #98bf21;
+	background-color: #777777;
+	border-style: none;
+	width: 20%;
 	margin:auto;
 }
 
 .colonne {
-	width: 30%;
+	
 }
 
 .cadre {
-	color:#E6E6E6;
-	width:90%;
+	background-color:#E6E6E6;
+	width:auto;
+	margin:1em 1em 1em 1em;
 	height:150px;
 }
 
