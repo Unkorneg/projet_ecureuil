@@ -1,0 +1,61 @@
+body {
+	background-color: #777777;
+}
+
+@media screen and (max-width: 1143px) {
+	#main {
+		width:800px;
+	}
+}
+
+@media screen and (min-width: 1143px) {
+	#main {
+		width:70%;
+	}
+}
+
+#main {
+	background-color: #AAAAAA;
+	overflow: hidden;
+	margin:auto;
+}
+
+.colonne {
+
+}
+
+#barre-gauche {
+	float:left;
+	border-style: solid;
+	border-color: #98bf21;
+	margin:2px;
+	width:25%;
+}
+
+#barre-droite {
+	float:right;
+	border-style: solid;
+	border-color: #98bf21;
+	margin:2px;
+	width:25%;
+}
+
+nav {
+	border-style: solid;
+	border-color: #98bf21;
+	margin:2px;
+	width:25%;
+}
+
+.cadre {
+	color:#E6E6E6;
+	width:90%;
+	height:150px;
+}
+
+#cadre1 {
+	background-color:;
+}
+
+footer {
+}
