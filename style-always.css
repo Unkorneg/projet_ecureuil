@@ -20,29 +20,27 @@ body {
 	margin:auto;
 }
 
-.colonne {
-
-}
-
 #barre-gauche {
 	float:left;
 	border-style: solid;
 	border-color: #98bf21;
-	width: 30%;
+
 }
 
 #barre-droite {
 	float:right;
 	border-style: solid;
 	border-color: #98bf21;
-	width: 30%;
 }
 
 nav {
 	border-style: solid;
 	border-color: #98bf21;
-	width: 30%;
 	margin:auto;
+}
+
+.colonne {
+	width: 30%;
 }
 
 .cadre {
