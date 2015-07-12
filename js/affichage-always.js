@@ -12,9 +12,9 @@ $(document).ready(function(){
     $(".sub-menu-item").hide();
     $(".menu-item").hover(
     	function() {
-    		$(this).children().children().show();
+    		$(this).children().children().slideDown(500);
     	}, function() {
-    		$(this).children().children().hide();
+    		$(this).children().children().slideUp(500);
     	});
 
 });
