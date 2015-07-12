@@ -6,6 +6,13 @@
 	float:right;
 }
 
+nav {
+ 	right: 40.5%;
+ 	width: 19%;
+ 	height: 100%;
+ 	margin: 0px 0px 20% 20%;
+}
+
 .cadre {
 	background-color:#E6E6E6;
 	width:auto;
