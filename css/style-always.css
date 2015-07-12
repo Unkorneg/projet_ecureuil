@@ -59,7 +59,7 @@ nav {
 .menu-item-bleu, .menu-item-jaune, .menu-item-rose {
    background-color:#808080; 
 }
-li.sub-menu-item {
+li.sub-menu-item-bleu, li.sub-menu-item-jaune,li.sub-menu-item-rose {
    overflow: hidden;
    background-color: #00A99D;
 }
@@ -72,7 +72,7 @@ li.sub-menu-item {
 li.menu-item-bleu, .menu-item-jaune, .menu-item-rose a {
 	font-size: 20px;
 }
-li.sub-menu-item a {
+li.sub-menu-item-bleu, li.sub-menu-item-jaune, li.sub-menu-item-rose a {
   font-size:16px;
 }
 li.menu-item-bleu:hover {
@@ -85,7 +85,7 @@ li.menu-item-rose:hover {
 	background: #E25195
 }
 
-li.sub-menu-item:hover {
+li.sub-menu-item-bleu:hover, li.sub-menu-item-rose:hover, li.sub-menu-item-jaune {
    background: #006B64;
 }
 .menu-accordeon ul li:last-child {
