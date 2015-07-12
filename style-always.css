@@ -28,7 +28,6 @@ body {
 	float:left;
 	border-style: solid;
 	border-color: #98bf21;
-	margin:2px;
 	width:25%;
 }
 
@@ -36,14 +35,12 @@ body {
 	float:right;
 	border-style: solid;
 	border-color: #98bf21;
-	margin:2px;
 	width:25%;
 }
 
 nav {
 	border-style: solid;
 	border-color: #98bf21;
-	margin:2px;
 	width:25%;
 }
 
