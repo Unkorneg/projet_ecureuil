@@ -81,7 +81,7 @@ nav {
 	color: white;
 	padding: 8px 0;
 }
-.menu-item-bleu, .menu-item-jaune, .menu-item-rose a {
+.menu-item a {
 	font-size: 20px;
 }
 .sub-menu-item a {

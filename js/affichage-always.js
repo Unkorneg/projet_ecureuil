@@ -9,16 +9,16 @@ $(document).ready(function(){
     });
 
     // réglage de l'apparition des petits trucs dans le menu
-    /*document.getElementById("demo").addEventListener("mouseover", mouseOver);
-	document.getElementById("demo").addEventListener("mouseout", mouseOut);
+    $(".menu-item").addEventListener("mouseover", mouseOverMenuItem);
+	$(".menu-item").addEventListener("mouseout", mouseOutMenuItem);
 
-	function mouseOver() {
-	    document.getElementById("demo").style.color = "red";
+	function mouseOverMenuItem() {
+	    $(".menu-item").style.color = "red";
 	}
 
-	function mouseOut() {
-    	document.getElementById("demo").style.color = "black";
-	}*/
+	function mouseOutMenuItem() {
+    	$(".menu-item").style.color = "black";
+	}
 
 
 });
