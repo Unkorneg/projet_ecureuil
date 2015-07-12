@@ -1,5 +1,5 @@
 body {
-	background-color: #777777;
+	background-color: #808080;
 	font-family:"Roboto", arial;
 }
 
@@ -15,7 +15,7 @@ body {
 	}
 }
 header {
-	background-color: #777777;
+	background-color: #808080;
 	text-align: center;
 	height:15%;
 }
@@ -23,7 +23,13 @@ header {
 	background-color: #B3B3B3;
 	overflow: hidden;
 	margin:auto;
+	margin-top: 0px;
 	height:1000px;
+	-moz-box-shadow: 0px 0px 5px 0px #656565;
+	-webkit-box-shadow: 0px 0px 5px 0px #656565;
+	-o-box-shadow: 0px 0px 5px 0px #656565;
+	box-shadow: 0px 0px 5px 0px #656565;
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=NaN, Strength=5);
 }
 
 #barre-gauche {
@@ -35,10 +41,12 @@ header {
 }
 
 nav {
-	background-color: #777777;
-	border-style: none;
-	width: 26%;
-	margin:auto;
+	background-color: #808080;
+	position: fixed;
+	right: 40%;
+	width: 20%;
+	height: 100%;
+	margin: 0px 0px 20% 20%;
 }
 
 .colonne {
@@ -50,6 +58,11 @@ nav {
 	width:auto;
 	margin:1em 1em 1em 1em;
 	height:250px;
+	-moz-box-shadow: 0px 0px 5px 0px #656565;
+	-webkit-box-shadow: 0px 0px 5px 0px #656565;
+	-o-box-shadow: 0px 0px 5px 0px #656565;
+	box-shadow: 0px 0px 5px 0px #656565;
+	filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=NaN, Strength=5);
 }
 
 #cadre1 {
