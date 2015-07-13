@@ -57,7 +57,7 @@ nav {
 	text-align: center;
 }
 .menu-item {
-	background-color:#808080;
+	background-color:#808080; 
 }
 .sub-menu-item {
 	overflow: hidden;
@@ -73,38 +73,35 @@ nav {
 }
 
 #menu-principal a {
-	display:inline-block;
-	text-align: center;
+	display:block;
 	text-decoration: none;
 	color: white;
 	padding: 8px 0;
-	font-family: 'Roboto';
 }
 .menu-item a {
 	font-size: 20px;
 }
-
 .sub-menu-item a {
 	font-size:16px;
 }
-.menu-bleu:before {
+.menu-bleu:hover {
 	background: #43BAB2
 }
-.menu-jaune:before {
+.menu-jaune:hover {
 	background: #FFDB5C
 }
-.menu-rose:before {
+.menu-rose:hover {
 	background: #E25195
 }
 
-.sub-bleu:before {
-	background: #00857B;
+.sub-bleu:hover {
+	background: #006B64;
 }
-.sub-jaune:before {
-	background: #D8A900;
+.sub-jaune:hover {
+	background: #AF8900;
 }
-.sub-rose:before {
-	background: #B40055;
+.sub-rose:hover {
+	background: #920045;
 }
 .colonne {
 	width: 37%;
