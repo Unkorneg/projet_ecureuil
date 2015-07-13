@@ -1,5 +1,5 @@
 body {
-	background-color: #808080;
+	background-color: #4D4D4D;
 	font-family:"Roboto", arial;
 }
 
@@ -15,7 +15,7 @@ body {
 	}
 }
 header {
-	background-color: #808080;
+	background-color: #4D4D4D;
 	height:15%;
 	width:100%;
 	top:0px;
@@ -24,7 +24,7 @@ header {
 }
 
 #main {
-	background-color: #B3B3B3;
+	background-color: #808080;
 	overflow: hidden;
 	margin:auto;
 	-moz-box-shadow: 0px 0px 5px 0px #656565;
@@ -35,7 +35,7 @@ header {
 }
 
 nav {
-	background-color: #808080;
+	background-color: #4D4D4D;
 	position: fixed;
 	right: 40.5%;
 	width: 19%;
@@ -57,19 +57,19 @@ nav {
 	text-align: center;
 }
 .menu-item {
-	background-color:#808080; 
+	margin: 0em 1em 1em 1em;
 }
 .sub-menu-item {
 	overflow: hidden;
 }
 .sub-bleu {
-	background-color: #00A99D;
+	background-color: #23AEA3;
 }
 .sub-jaune {
-	background-color: #FFC700;
+	background-color: #FFD334;
 }
 .sub-rose {
-	background-color: #DA0067;
+	background-color: #DC2D7F;
 }
 
 #menu-principal a {
@@ -79,29 +79,39 @@ nav {
 	padding: 8px 0;
 }
 .menu-item a {
-	font-size: 20px;
+	font-size: 20px;	
 }
 .sub-menu-item a {
 	font-size:16px;
 }
 .menu-bleu {
-	background: #43BAB2
+	background: #00A99D
 }
 .menu-jaune {
-	background: #FFDB5C
+	background: #FFC700
 }
 .menu-rose {
-	background: #E25195
+	background: #DA0067
+}
+
+.menu-bleu:before {
+	background: #006B64
+}
+.menu-jaune:before {
+	background: #FFD334
+}
+.menu-rose:before {
+	background: #DC2D7F
 }
 
 .sub-bleu:hover {
-	background: #006B64;
+	background: #00857B;
 }
 .sub-jaune:hover {
-	background: #AF8900;
+	background: #D8A900;
 }
 .sub-rose:hover {
-	background: #920045;
+	background: #B40055;
 }
 .colonne {
 	width: 37%;
