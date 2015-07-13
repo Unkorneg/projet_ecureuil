@@ -7,8 +7,11 @@ $(document).ready(function(){
 		'margin-top' : mrgntop
 	});
 
+
 	var espaceDispoMenu = window.innerHeight - $('header').outerHeight(true);
+	var margBottom = parseInt($(".menu-item").css("marginBottom"),10);
 	var nbEnfantsMenu = $("#menu-principal").children().length;
+	espaceDispoMenu = espaceDispoMenu - nbEnfantsMenu*margBottom;
 	var heightMenuItem = espaceDispoMenu/nbEnfantsMenu;
 	$(".menu-item").css({
 		'height' : heightMenuItem
@@ -24,7 +27,7 @@ $(document).ready(function(){
     		if (nbEnfants) {
     			var aHeight = $(this).children("a").outerHeight(true);
     			var subHeight = $(this).children().children().outerHeight(true);
-    			var futureLongueurBloc = subHeight*nbEnfants + aHeight;
+    			var futureLongueurBloc = subHeight * nbEnfants + aHeight;
     			var futureLongueurAutresBlocs = (espaceDispoMenu - futureLongueurBloc)/(nbEnfantsMenu - 1);
 
     			$(this).animate({
@@ -47,7 +50,9 @@ $(document).ready(function(){
     			$(this).children().children().slideUp(500);
 
     			var espaceDispoMenu = window.innerHeight - $('header').outerHeight(true);
+    			var margBottom = parseInt($(".menu-item").css("marginBottom"),10);
     			var nbEnfantsMenu = $("#menu-principal").children().length;
+    			espaceDispoMenu = espaceDispoMenu - nbEnfantsMenu*margBottom;
     			var heightMenuItem = espaceDispoMenu/nbEnfantsMenu;
 
     			$(".menu-item").animate({
