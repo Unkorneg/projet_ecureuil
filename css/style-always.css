@@ -84,13 +84,13 @@ nav {
 .sub-menu-item a {
 	font-size:16px;
 }
-.menu-bleu:hover {
+.menu-bleu {
 	background: #43BAB2
 }
-.menu-jaune:hover {
+.menu-jaune {
 	background: #FFDB5C
 }
-.menu-rose:hover {
+.menu-rose {
 	background: #E25195
 }
 
