@@ -18,46 +18,58 @@ $(document).ready(function(){
 	});
 
     // réglage de l'apparition des petits trucs dans le menu
-    $(".sub-menu-item").hide();
+    var heightSubMenuItem = $(".sub-menu-item").outerHeight(true);
+    $(".sub-menu-item").css({
+        'height' : 0
+    });
 
     $(".menu-item").hover(
     	function() {
+
     		var nbEnfants = $(this).children().children().length;
 
     		if (nbEnfants) {
-    			var aHeight = $(this).children("a").outerHeight(true);
-    			var subHeight = $(this).children().children().outerHeight(true);
-    			var futureLongueurBloc = subHeight * nbEnfants + aHeight;
-    			var futureLongueurAutresBlocs = (espaceDispoMenu - futureLongueurBloc)/(nbEnfantsMenu - 1);
 
-    			$(this).animate({
-    				'height' : futureLongueurBloc
-    			},300);
-    			$(".menu-item").not($(this)).animate({
-    				'height' : futureLongueurAutresBlocs
-    			},300);
-    			$(this).children().children().css({
-    				'height' : subHeight
-    			});
+                $(".menu-item").not($(this)).addClass("bloque");
 
-    			$(this).children().children().slideDown(500);
-    		}
+                if(!$(this).hasClass("bloque")) {
+                    var aHeight = $(this).children("a").outerHeight(true);
+                    var futureLongueurBloc = heightSubMenuItem * nbEnfants + aHeight;
+                    var futureLongueurAutresBlocs = (espaceDispoMenu - futureLongueurBloc)/(nbEnfantsMenu - 1);
 
-    	}, function() {
-    		var nbEnfants = $(this).children().children().length;
+                    $(this).animate({
+                        'height' : futureLongueurBloc
+                    },300);
+                    $(".menu-item").not($(this)).animate({
+                        'height' : futureLongueurAutresBlocs
+                    },300);
+                    $(this).children().children().animate({
+                        'height' : heightSubMenuItem
+                    },300);
+                }
 
-    		if (nbEnfants) {
-    			$(this).children().children().slideUp(500);
+            }
 
-    			var espaceDispoMenu = window.innerHeight - $('header').outerHeight(true);
-    			var margBottom = parseInt($(".menu-item").css("marginBottom"),10);
-    			var nbEnfantsMenu = $("#menu-principal").children().length;
-    			espaceDispoMenu = espaceDispoMenu - nbEnfantsMenu*margBottom;
-    			var heightMenuItem = espaceDispoMenu/nbEnfantsMenu;
+        }, function() {
 
-    			$(".menu-item").animate({
-    				'height' : heightMenuItem
-    			}, 300);
-    		}
-    	});
+          var nbEnfants = $(this).children().children().length;
+
+          if (nbEnfants && !$(this).hasClass("bloque")) {
+                var espaceDispoMenu = window.innerHeight - $('header').outerHeight(true);
+                var margBottom = parseInt($(".menu-item").css("marginBottom"),10);
+                var nbEnfantsMenu = $("#menu-principal").children().length;
+                espaceDispoMenu = espaceDispoMenu - nbEnfantsMenu*margBottom;
+                var heightMenuItem = espaceDispoMenu/nbEnfantsMenu;
+
+                $(".menu-item").animate({
+                    'height' : heightMenuItem
+                },300);
+                $(this).children().children().animate({
+                    'height' : 0
+                },300, function() {
+                    $(".menu-item").removeClass("bloque");
+                });
+
+            }
+        });
 });
