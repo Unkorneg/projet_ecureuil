@@ -33,21 +33,21 @@ $(document).ready(function(){
 
             $(this).addClass("animating");
 
-            peutOnDeroulerLesMenus = false;
+                peutOnDeroulerLesMenus = false;
 
-            var aHeight = $this.children("a").outerHeight(true);
-            var futureLongueurBloc = heightSubMenuItem * nbEnfants + aHeight;
-            var futureLongueurAutresBlocs = (espaceDispoMenu - futureLongueurBloc)/(nbEnfantsMenu - 1);
+                var aHeight = $this.children("a").outerHeight(true);
+                var futureLongueurBloc = heightSubMenuItem * nbEnfants + aHeight;
+                var futureLongueurAutresBlocs = (espaceDispoMenu - futureLongueurBloc)/(nbEnfantsMenu - 1);
 
-            $this.animate({
-                'height' : futureLongueurBloc
-            },300);
-            $(".menu-item").not($(this)).animate({
-                'height' : futureLongueurAutresBlocs
-            },300);
-            $this.children().children().animate({
-                'height' : heightSubMenuItem
-            },300);
+                $this.animate({
+                    'height' : futureLongueurBloc
+                },300);
+                $(".menu-item").not($(this)).animate({
+                    'height' : futureLongueurAutresBlocs
+                },300);
+                $this.children().children().animate({
+                    'height' : heightSubMenuItem
+                },300);
           
         }
 
