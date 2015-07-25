@@ -1,3 +1,5 @@
 from django.contrib import admin
+from .models import Profil,Localisation
 
-# Register your models here.
+admin.site.register(Profil)
+admin.site.register(Localisation)
