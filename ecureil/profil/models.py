@@ -37,6 +37,7 @@ class Profil(models.Model):
 	avatar = models.ImageField(null=True, blank=True, upload_to="avatars/")
 	date_naissance = models.DateField()
 	localisation = models.ForeignKey(Localisation)
+	#description = models.OneToOneField(Description)
 	sexe = models.CharField(max_length=1,
 							choices=CHOIX_SEXE,
 							)
@@ -48,9 +49,6 @@ class Profil(models.Model):
 								   )
 	est_premium = models.BooleanField(default=False)
 	est_certifie = models.BooleanField(default=False)
-
-
-		
 
 
 	def __str__(self):
